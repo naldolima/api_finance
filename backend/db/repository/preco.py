@@ -2,11 +2,10 @@ from sqlalchemy.orm import Session
 from modelos.lstm import get_model
 from db.models.preco import Preco
 from core.config import settings
-from datetime import datetime
+
 
 def treinar_modelo_preco(db: Session):
-    result_modelo = get_model('2024-06-01', '2024-09-01', '2024-09-01', '2024-11-01', 1, 5)
-
+    result_modelo = get_model(settings.DT_START_TRAIN,settings.DT_END_TRAIN,settings.DT_START_VALID,settings.DT_END_VALID,settings.NUM_EXAMPLES,settings.VAL_SIZE)
     delete_resultado_modelo(db=db)
 
     for i, infos in result_modelo.iterrows():
@@ -19,6 +18,7 @@ def treinar_modelo_preco(db: Session):
         db.add(preco)
         db.commit()
         db.refresh(preco)
+
     return 'Modelo treinado com sucesso'
 
 def listar_resultado_modelo(db: Session):

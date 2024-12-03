@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from datetime import datetime
 
 from pathlib import Path
 env_path = Path('') / '.env'
@@ -20,5 +21,13 @@ class Settings:
 
     # Geral
     TICKER_SYMBOL: str = "AAPL"
+
+    # Parametros do Modelo LSTM
+    DT_START_TRAIN:  str = '2024-06-01'
+    DT_END_TRAIN: str = '2024-09-30'
+    DT_START_VALID: str = '2024-10-01'
+    DT_END_VALID: str = '2024-10-31'
+    NUM_EXAMPLES: int = 1
+    VAL_SIZE: int = 30
 
 settings = Settings()

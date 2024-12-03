@@ -12,9 +12,9 @@ router = APIRouter()
 @router.get("")
 def treinar_modelo(db: Session = Depends(get_db),current_user: User = Depends(get_current_user)):
     try:
-        #delete_resultado_modelo(db=db)
+
         treinar_modelo_preco(db=db)
-        #listar_resultado_modelo(db=db)
+
     except:
         raise HTTPException(
             detail="Error processing data",
