@@ -10,7 +10,7 @@
 ## Links e Repositórios do Projeto
 [Git Hub Project](https://github.com/naldolima/embrapa_api)
 
-[Video Explicativo](https://youtu.be/DVCTuCq1edU)
+[Video Explicativo](https://youtu.be/_8y6TDCgzE0)
 
 
 ## Tecnologias Utilizadas:
