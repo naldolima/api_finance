@@ -1,18 +1,14 @@
 # Tech Challeng FIAP 
-> API - Recupera dados de produção, processamento, comercialização, importação
-> e exportação diretamente do site da embrapa ([Embrapa Site](http://vitibrasil.cnpuv.embrapa.br)).
-> 
+> API - Criar uma api para treinar um modelo LSTM utilizando dados financeiros
+> do Yfinance Yahoo
+
 
 ## Objetivo? 
-> Disponibilizar um canal de acesso para recuperação e armazenamento dos dados de forma
-> estruturada, facilitando a utilização desses dados pelas aplicações, equipes de 
-> analistas e cientistas de dados.
+> Disponibilizar uma api para realizar o treino e obter o resultado do modelo.
 
 
 ## Links e Repositórios do Projeto
 [Git Hub Project](https://github.com/naldolima/embrapa_api)
-
-[Embrapa Site](http://vitibrasil.cnpuv.embrapa.br)
 
 [Video Explicativo](https://youtu.be/DVCTuCq1edU)
 
@@ -24,6 +20,9 @@
 * Sqlalchemy
 * Sqlite
 * Jwt
+* Yfinance
+* AutoLSTM
+* Docker
 
 ## Arquitetura do Projeto:
 ![](backend/images/architecture.JPG)
@@ -31,12 +30,8 @@
 ## Como fazer o download e iniciar a aplicação ?
 ```
 git clone https://github.com/naldolima/embrapa_api.git
-cd .\embrapa_api\
-python -m venv env   #create a virtual environment
-.\env\Scripts\activate  #activate your virtual environment
-cd .\backend\
-pip install -r .\requirements.txt
-uvicorn main:app --reload     #start server
+cd .\api_finance\backend
+docker build -t api_finance .
 visit  127.0.0.1:8000/
 ```
 ## Como autenticar com o user admin ?
@@ -59,21 +54,26 @@ Utilizar o Token:
 > como por exemplo: "Postman", e faça uma requisição GET com os 
 > seguintes parametros:
 > * Escolha o método GET
-> * Url: http://127.0.0.1:8000/producao
+> * Url: http://127.0.0.1:8000/treinar_modelo
 > * Na opção Authorization ajuste as opções: 
 > Type: OAuth 2.0, Current token: coloque o token gerado conforme 
 > passo anterior, Header Prefix: Bearer
 
-## Como executar o modelo de ML Exemplo de Regressão Logística?
+## Como ajustar os parametros do modelo?
 ```
-cd .\backend\modelos
-python.exe .\regressao.py
+cd .\backend\core\config.py
+
+ # Parametros do Modelo LSTM
+ 
+ DT_START_TRAIN:  str = '2024-06-01' # data de inicio do treino
+ DT_END_TRAIN: str = '2024-09-30' # data de final do treino
+ DT_START_VALID: str = '2024-10-01' # data de inicio da validacao
+ DT_END_VALID: str = '2024-10-31' # data do fim da validacao
+ NUM_EXAMPLES: int = 1 # numero de exemplos para o modelo treinar
+ VAL_SIZE: int = 30 # dias para validação 
+
+
 ```
-
-Visualizar o resultado do teste no Power BI:
-> Com o Power BI instalado na sua máquina, localize o arquivo no caminho: .\dashborad\
->> modelo_classificacao.pbix
-
 ![](backend/images/dashboard.JPG)
 
 Temas abordados:
@@ -84,6 +84,4 @@ Temas abordados:
  - ✔️ Password Hashing
  - ✔️ Authentication login/create user/get token
  - ✔️ Authorization/Permissions
- - ✔️ sklearn
- - ✔️ LogisticRegression
- - ✔️ Power BI
+ - ✔️ LSTM

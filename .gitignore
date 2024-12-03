@@ -3,3 +3,5 @@ env
 .pytest_cache
 htmlcov
 .coverage
+lightning_logs
+db\repository\lightning_logs

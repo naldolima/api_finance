@@ -1,15 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf597947-ca91-4e94-ac8d-5a930aebea4a" name="Changes" comment="" />
+    <list default="true" id="cf597947-ca91-4e94-ac8d-5a930aebea4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/api_finance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/alembic/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apis/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apis/v1/route_listar_preco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apis/v1/route_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apis/v1/route_preco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apis/v1/route_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/conexao/connect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/hashing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/base_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/create_sqlite_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/create_sqlite_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/models/preco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/repository/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/repository/preco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/repository/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/db/session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/images/architecture.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/images/dashboard.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/modelos/lstm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/modelos/wmape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/schemas/preco.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/schemas/user.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pMdLJxspwD7i1c3nGq0GIoIY5d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -18,10 +73,103 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.create_sqlite_database.executor": "Run",
+    "Python.create_sqlite_user.executor": "Run",
+    "Python.preco.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/frodriguesl/PycharmProjects/api_finance/backend/apis/v1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\frodriguesl\PycharmProjects\api_finance\backend\apis\v1" />
+      <recent name="C:\Users\frodriguesl\PycharmProjects\api_finance\backend\conexao" />
+      <recent name="C:\Users\frodriguesl\PycharmProjects\api_finance" />
+      <recent name="C:\Users\frodriguesl\PycharmProjects\api_finance\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frodriguesl\PycharmProjects\api_finance\backend" />
+      <recent name="C:\Users\frodriguesl\PycharmProjects\api_finance\backend_2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.preco">
+    <configuration name="create_sqlite_database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_finance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/db/create_sqlite_database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_sqlite_user" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_finance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/db" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/db/create_sqlite_user.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="preco" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="api_finance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/db/repository" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/db/repository/preco.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.preco" />
+        <item itemvalue="Python.create_sqlite_user" />
+        <item itemvalue="Python.create_sqlite_database" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -39,5 +187,8 @@
       <updated>1732579820474</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.db" />
   </component>
 </project>
